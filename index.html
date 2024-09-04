@@ -12,11 +12,11 @@
         <h1 class="logo">Convert Celsius to Fahrenheit</h1>
         <div>
             <h3>Celsius :</h3>
-            <input type="number" class="input" name="cg" id="cg" placeholder="Celsius" onchange="convertToFahrenheit()">
+            <input type="number" class="input" name="cg" id="cg" placeholder="Celsius" onchange="convertToFahrenheit()" oninput="validateInput(event)">
         </div>
         <div>
             <h3>Fahrenheit :</h3>
-            <input type="number" class="input" name="fh" id="fh" placeholder="Fahrenheit" onchange="convertToCelsius()">
+            <input type="number" class="input" name="fh" id="fh" placeholder="Fahrenheit" onchange="convertToCelsius()" oninput="validateInput(event)">
         </div>
     </div>
     <script src="script.js">

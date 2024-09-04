@@ -13,3 +13,9 @@ function convertToCelsius() {
         document.getElementById("cg").value = celsius;
     }
 }
+
+function validateInput(event) {
+    const input = event.target;
+    // Remove any character that is not a digit
+    input.value = input.value.replace(/[^0-9]/g, '');
+}
